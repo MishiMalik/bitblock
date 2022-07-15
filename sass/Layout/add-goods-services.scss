@@ -1,0 +1,207 @@
+.add-goods-body{
+    padding:0px 0px 10px 0px!important;
+    @media only screen and (max-width: 767px){
+        padding:0px 0px!important;
+    }
+}
+.top{
+    position: fixed;
+    top: 0px !important;
+}
+.goods-services-heading h4{
+font-size: 2rem;
+font-weight: 500;
+color:$blue ;
+@media only screen and (max-width: 479px){
+    font-size: 2.2rem;
+   }
+}
+
+.navbar-brand2 img {
+    height: 35px;
+    width: 17rem;
+}
+.add__form{
+    &-label{
+       font-size: 1.6rem;
+       font-weight: 500;
+       @media only screen and (max-width: 479px){
+        font-size: 1.8rem;
+       }
+    }
+    &-input{
+        font-size: 1.5rem;
+        padding: 7px 10px;
+        transition: all 0.5s ease-in-out;
+        border-radius: 3px !important;
+        @media only screen and (max-width: 767px){
+            padding: 9px 10px;
+            font-size: 1.6rem;
+        }
+        @media only screen and (max-width: 479px){
+            font-size: 1.7rem;
+           }
+        &:hover,
+        &:focus{
+            box-shadow: none;
+            border: 1px solid #ccc !important;
+            border: 1px solid $blue !important;
+        } 
+        & option .selected-option{
+            color: red !important;
+        }
+    }
+    &-span{
+        font-size: 1.4rem;
+        font-weight: 400;
+    }
+    #editor{
+        border: 1px solid #ccc !important;
+        border-top: none!important;
+        font-size: 1.5rem !important;
+        min-height: 150px !important;
+        max-height: 300px !important;
+        overflow-y: auto;
+        border-radius: 0px 0px 3px 3px;
+    }
+    &-check{
+     font-size: 1.7rem;
+    }
+    &-checkLabel{
+        font-size: 1.6rem;
+    }
+    .location-heading h4{
+        font-size: 2rem;
+        font-weight: 500;
+        color:$blue ;
+        @media only screen and (max-width: 479px){
+            font-size: 2.2rem;
+           }
+    }
+    .add-file{
+        display: flex !important;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        z-index: 2;
+        overflow: hidden;
+        // @media only screen and (max-width: 500px){
+        //     flex-direction: column;
+        // }
+    }
+    .add-file2{
+        display: flex !important;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        z-index: 2;
+        overflow: hidden;
+    }
+    .add-file3{
+        display: flex !important;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        z-index: 2;
+        overflow: hidden;
+    }
+    input[type="file"] {
+        position: absolute;
+        font-size: 1.6rem;
+        top: 3px;
+        left: 92px;
+        z-index: 0;
+        @media only screen and (max-width: 500px){
+            left: 40px;
+        }
+        @media only screen and (max-width: 479px){
+            left:60px;
+           }
+    }
+    .close-file{
+        color: black;
+        font-size: 1.4rem;
+        display: none;       
+    }
+    .custom-file-upload {
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        display: inline-block;
+        padding: 7px 12px;
+        font-size: 1.5rem;
+        cursor: pointer;
+        width: 200px;
+        text-align: center;
+        position: relative;
+        z-index: 2;
+        background-color: white;
+        @media only screen and (max-width: 500px){
+            width: 150px;
+        }
+    }
+    .submit__btn {
+        display: flex;
+        justify-content: end;
+        @media only screen and (max-width: 767px){
+            justify-content: center !important;
+            width: 100%;
+        }
+    }
+    .submit__btn button{
+        font-size: 2rem;
+        font-weight: 400;
+        padding: 6px 50px;
+        border: none;
+        border-radius: 3px;
+        background-color: $blue;
+        color: white;
+        @media only screen and (max-width: 767px){
+            width: 100%;
+        }
+    }
+    
+}
+
+
+.custom-file-input::-webkit-file-upload-button {
+    visibility: visible;
+  }
+  .custom-file-input::before {
+    content: 'Select some files';
+    display: inline-block;
+    background: linear-gradient(top, #f9f9f9, #e3e3e3);
+    border: 1px solid #999;
+    border-radius: 3px;
+    padding: 5px 8px;
+    outline: none;
+    white-space: nowrap;
+    cursor: pointer;
+    text-shadow: 1px 1px #fff;
+    font-weight: 700;
+    font-size: 10pt;
+  }
+  .custom-file-input:hover::before {
+    border-color: black;
+  }
+  .custom-file-input:active::before {
+    background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+  }
+  .cancel-btn{
+      border: 1px solid black;
+      border-radius: 50%;
+      height: 30px;
+      width: 30px;
+      font-size: 1.8rem;
+      background-color: white !important;
+      position: relative;
+      z-index: 10;
+     display: block !important;
+  }
+  .check-label{
+    @media only screen and (max-width: 767px){
+        width:50%;
+    }
+    @media only screen and (max-width: 380px){
+        width:90%;
+    }
+  }

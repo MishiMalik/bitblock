@@ -1,0 +1,95 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+body {
+   font-family: 'Poppins', sans-serif;
+    position: relative;
+z-index: 1;    
+   background-color: #f5f6f7;
+   padding-top: 79px;
+}
+.white-bg{
+    background-color: #fff !important;
+}
+.neg-margin{
+    margin-top: -5px;
+}
+@media only screen and (min-width: 991px) {
+    .container {
+        max-width: 85% !important;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .container {
+        max-width: 100% !important;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .container {
+        max-width: 85% !important;
+    }
+}
+@media only screen and (max-width: 767px) {
+    body {
+        padding-top: 73px;
+        padding-bottom: 57px;
+    }
+}
+@media only screen and (max-width: 479px) {
+    html {
+        font-size: 8px;
+    }
+    .container {
+        max-width: 100% !important;
+    }
+}
+.col-dlg-3{
+    max-width: 17% ;
+    @media only screen and (max-width: 1270px){
+        max-width: 18% ;
+    }
+    @media only screen and (max-width: 1080px){
+        max-width: 20% ;
+    }
+    @media only screen and (max-width: 991px){
+        max-width: 25% ;
+    }
+    @media only screen and (max-width: 868px){
+        max-width: 28% ;
+    }
+    @media only screen and (max-width: 800px){
+        max-width: 30% ;
+    }
+    @media only screen and (max-width: 767px){
+        max-width: 100% ;
+    }
+}
+.col-dlg-10{
+    max-width: 80% ;
+    @media only screen and (max-width: 1270px){
+        max-width: 78% ;
+    }
+    @media only screen and (max-width: 1080px){
+        max-width: 79% ;
+    }
+    @media only screen and (max-width: 991px){
+        max-width: 75% ;
+    }
+    
+    @media only screen and (max-width: 868px){
+        max-width: 72% ;
+    }
+    @media only screen and (max-width: 800px){
+        max-width: 70% ;
+    }
+    @media only screen and (max-width: 767px){
+        max-width: 100% ;
+    }
+}

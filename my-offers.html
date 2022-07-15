@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yaldevi:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <script type="text/javascript" src="assets/Owl-carousel/jquery.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>My Offers</title>
+</head>
+
+<body class="account-body" id="account-body">
+    <div class="allButFooter2 mb-4">
+                  <!-- ====================Header part==================== -->
+        <header class="header fixed-top market-header">
+            <div class="container  header-contain  "  >
+                <nav class="navbar navbar-expand-md navbar-light ">
+                    <div class="container-fluid small-cont px-0 ">
+                        <a class="navbar-brand" href="index.html"><img src="assets/img/zogsales.svg" alt="" class=""></a>
+        
+                        <form class="d-flex nav-input small-nav-input order2">
+                            <input class="form-control me-2" type="search" placeholder="Search product or sku ..." id="input1"
+                                aria-label="Search product or sku ...">
+                            <div class="input-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                            </div>
+                        </form>
+        
+                        <div class="destop-header-menu">
+                            <ul class="navbar-nav mb-lg-0 sidenav-content">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="market.html">Go to Market</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="seller-creation.html">Sell</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="sign-in.html">Sign In</i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link nav-link-icon" href="account-wants.html">
+                                        <i class="fas fa-heart heart"></i>
+                                        <i class="fas fa-user"></i>
+                                    </a>                               
+                                </li>
+                            </ul>
+                        </div>
+
+                        <button class="openHeadbtn" onclick="openHeadNav()">&#9776; </button>
+                            
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- =====================small header sidebar============= -->
+        <div class="headsidebar pt-5"   id="HeadSidebar">
+            <a href="javascript:void(0)" class="closeHeadbtn" onclick="closeHeadNav()">×</a>
+            <ul class="px-4 navbar-nav mb-lg-0 d-flex justify-content-center align-items-center flex-column">
+                <li class=" px-auto">
+                 <a href="index.html"><img src="assets/img/zogsales.svg" alt="" class="head-side-logo img-fluid"></a>
+                </li>
+                <li class=" d-flex align-items-center justify-content-start w-100">
+                    <!-- <div class="head-side-icon me-1">                       
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#436be0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                    </div> -->
+                    <a class="nav-link active ms-4" aria-current="page" href="market.html">Go to Market</a>
+                </li>
+                <li class="  d-flex align-items-center justify-content-start w-100">
+                    <!-- <div class="head-side-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div> -->
+                    <a class="nav-link ms-4" href="seller-creation.html">Sell</a>
+                </li>
+                <li class="  d-flex align-items-center justify-content-start w-100">
+                    <!-- <div class="head-side-icon">
+                        <i class="fas fa-user-alt"></i>
+                    </div> -->
+                    <a class="nav-link ms-4" href="sign-in.html">Sign In</i></a>
+                </li>
+                <li class="  d-flex  w-100">
+                    <a class="nav-link ms-4" href="sign-in.html">About zogsales</i></a>
+                </li>
+                <li class=" d-flex  w-100 ">
+                    <a class="nav-link ms-4" href="sign-in.html">Privacy Policy</i></a>
+                </li>
+                <li class=" d-flex w-100 ">
+                    <a class="nav-link ms-4" href="sign-in.html">Terms & Conditions</i></a>
+                </li>
+                <li class=" d-flex  w-100">
+                    <a class="nav-link ms-4" href="sign-in.html">Blog</i></a>
+                </li>
+                <li class="mt-auto  d-flex align-items-center justify-content-center ">
+                    
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-in"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path><polyline points="10 17 15 12 10 7"></polyline><line x1="15" y1="12" x2="3" y2="12"></line></svg>
+                    <a class="nav-link  mx-2 side-sign-btn" href="sign-in.html">Sign In</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- ======================header apear on search click=============== -->
+        <header class="header  animated-header" href="javascript:void(0)"  id="animatedheader" >
+            <div class="container  header-contain ">
+                <nav class="navbar navbar-expand-md navbar-light padding-end">
+                    <div class="container-fluid small-cont px-0 ">
+                        <div class="navbar-brand" href="#"><img src="assets/img/zogsales.svg" alt="" class=""></div>
+        
+                        <form class="d-flex nav-input small-nav-input order2">
+                            <input class="form-control me-2" type="search" placeholder="Search product or sku ..."
+                                aria-label="Search product or sku ..." id="input2">
+                            <div class="input-icon"><i class="fas fa-search"></i></div>
+                        </form>
+        
+                        <button class="openHeadbtn" onclick="openHeadNav()">&#9776; </button>
+
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- ====================Header part End==================== -->
+        
+         <!-- =========================================================================================== -->
+        <!-- =========================================================================================== -->
+        <!--=========================Categories===================== -->
+        <!-- =========================================================================================== -->
+        <!-- =========================================================================================== -->
+        <section class="small-cat">
+               
+            <div class="account__categories-small  fixed-filter">
+           
+                <div class="container owl-cont">
+        
+                    <div class="owl-carousel owl-theme sliding-header account__categories-small--header" id="selector">
+    
+                        <div class="menu " onclick="window.location.href='account-wants.html'" id="my-wants" data-link="account-wants.html">
+                           My Wants
+                        </div>
+            
+                        <div class="menu" onclick="window.location.href='my-request.html'" id="my-requests" data-link="my-request.html">
+                           My Requests
+                        </div>
+            
+                        <div class="menu " onclick="window.location.href='account-detail.html'" id="account-detail" data-link="account-detail.html">
+                            Change Password
+                        </div>
+            
+                        <div class="menu" onclick="window.location.href='my-orders.html'" id="my-orders" data-link="my-orders.html">
+                            My Orders
+                        </div>
+            
+                        <div class="menu " onclick="window.location.href='add-new-products.html'" id="add-product" data-link="add-new-products.html">
+                           Add New Products
+                         </div>
+            
+                         <div class="menu" onclick="window.location.href='my-products.html'" id="my-products" data-link="my-products.html">
+                            My Products
+                         </div>
+            
+                         <div class="menu" onclick="window.location.href='request-recievd.html'" id="request-recieve" data-link="request-recievd.html">
+                             Request Received
+                         </div>
+            
+                         <div class="menu" onclick="window.location.href='my-offers.html'" id="my-offer" data-link="my-offers.html">
+                            My Offers
+                        </div>
+            
+            
+                    </div>
+            
+            
+                </div>
+        
+            </div>
+        </section>
+        <!-- =========================================================================================== -->
+        <!-- =========================================================================================== -->
+        <!--=========================Main part===================== -->
+        <!-- =========================================================================================== -->
+        <!-- =========================================================================================== -->
+        <main class="container mt-4 ">
+            <div class="wants">
+                <div class="row  d-flex justify-content-center" >
+                    <div class="col-lg-9 account-main-col" id="account-id">
+                        <div class="account__box">
+                            <div class="product__related-heading clr-black">My Offers</div>
+                            <ul class="wants__list">
+                                <li class="wants__list-card row d-flex order p-2">
+                                    <div class="col-lg-12 ">
+                                        <div
+                                            class="order__header border-bottom d-flex justify-content-between align-items-center w-100">
+                                            <div class="order__header-number d-flex flex-column">
+                                                <p class="mb-0 pb-0 order__header-number--num">Order#124638</p>
+                                                <p class="replace-date mb-0">
+                                                    Replaced on 2021:10:11&nbsp;&nbsp;20:21
+                                                </p>
+                                            </div>
+                                            <div class="order__header-price">
+                                                <p class="mb-0">₦40.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 col-12 py-1">
+                                        <div class="order__text">
+                                            <p class="mb-1">Here will be the Name of the Product that customer buy.Like
+                                                Kurta for men with white pent</p>
+                                            <div class="order__text-sku">
+                                                <p class="mb-0">SKU : E56G9</p>
+                                            </div>
+                                            <div class="order__text-product">
+                                                <p class="mb-0">Good</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-12 py-1 order__status-section">
+                                        <div class="order__text-date ">
+                                            <p class="mb-0">Due on 13-10-2021</p>
+                                        </div>
+                                        <div class="order__button">
+                                            <button> <a href="#">Invoice<i
+                                                        class="far fa-arrow-to-bottom ms-2"></i></a></button>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="wants__list-card row d-flex order p-2">
+                                    <div class="col-lg-12 ">
+                                        <div
+                                            class="order__header border-bottom d-flex justify-content-between align-items-center w-100">
+                                            <div class="order__header-number d-flex flex-column">
+                                                <p class="mb-0 pb-0 order__header-number--num">Order#124638</p>
+                                                <p class="replace-date mb-0">
+                                                    Replaced on 2021:10:11&nbsp;&nbsp;20:21
+                                                </p>
+                                            </div>
+                                            <div class="order__header-price">
+                                                <p class="mb-0">₦40.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 col-12 py-1">
+                                        <div class="order__text">
+                                            <p class="mb-1">Here will be the Name of the Product that customer buy.Like
+                                                Kurta for men with white pent</p>
+                                            <div class="order__text-sku">
+                                                <p class="mb-0">SKU : E56G9</p>
+                                            </div>
+                                            <div class="order__text-product">
+                                                <p class="mb-0">Good</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-12 py-1 order__status-section">
+                                        <div class="order__text-date ">
+                                            <p class="mb-0">Due on 13-10-2021</p>
+                                        </div>
+                                        <div class="order__button">
+                                            <button> <a href="#">Invoice<i
+                                                        class="far fa-arrow-to-bottom ms-2"></i></a></button>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="wants__list-card row d-flex order p-2">
+                                    <div class="col-lg-12 ">
+                                        <div
+                                            class="order__header border-bottom d-flex justify-content-between align-items-center w-100">
+                                            <div class="order__header-number d-flex flex-column">
+                                                <p class="mb-0 pb-0 order__header-number--num">Order#124638</p>
+                                                <p class="replace-date mb-0">
+                                                    Replaced on 2021:10:11&nbsp;&nbsp;20:21
+                                                </p>
+                                            </div>
+                                            <div class="order__header-price">
+                                                <p class="mb-0">₦40.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 col-12 py-1">
+                                        <div class="order__text">
+                                            <p class="mb-1">Here will be the Name of the Product that customer buy.Like
+                                                Kurta for men with white pent</p>
+                                            <div class="order__text-sku">
+                                                <p class="mb-0">SKU : E56G9</p>
+                                            </div>
+                                            <div class="order__text-product">
+                                                <p class="mb-0">Good</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-12 py-1 order__status-section">
+                                        <div class="order__text-date ">
+                                            <p class="mb-0">Due on 13-10-2021</p>
+                                        </div>
+                                        <div class="order__button">
+                                            <button> <a href="#">Invoice<i
+                                                        class="far fa-arrow-to-bottom ms-2"></i></a></button>
+                                        </div>
+                                    </div>
+                                </li>
+
+
+                                <li class="wants__list-card row d-flex order p-2">
+                                    <div class="col-lg-12 ">
+                                        <div
+                                            class="order__header border-bottom d-flex justify-content-between align-items-center w-100">
+                                            <div class="order__header-number d-flex flex-column">
+                                                <p class="mb-0 pb-0 order__header-number--num">Order#124638</p>
+                                                <p class="replace-date mb-0">
+                                                    Replaced on 2021:10:11&nbsp;&nbsp;20:21
+                                                </p>
+                                            </div>
+                                            <div class="order__header-price">
+                                                <p class="mb-0">₦40.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 col-12 py-1">
+                                        <div class="order__text">
+                                            <p class="mb-1">Here will be the Name of the Product that customer buy.Like
+                                                Kurta for men with white pent</p>
+                                            <div class="order__text-sku">
+                                                <p class="mb-0">SKU : E56G9</p>
+                                            </div>
+                                            <div class="order__text-product">
+                                                <p class="mb-0">Good</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-12 py-1 order__status-section">
+                                        <div class="order__text-date ">
+                                            <p class="mb-0">Due on 13-10-2021</p>
+                                        </div>
+                                        <div class="order__button">
+                                            <button> <a href="#">Invoice<i
+                                                        class="far fa-arrow-to-bottom ms-2"></i></a></button>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="wants__list-card row d-flex order p-2">
+                                    <div class="col-lg-12 ">
+                                        <div
+                                            class="order__header border-bottom d-flex justify-content-between align-items-center w-100">
+                                            <div class="order__header-number d-flex flex-column">
+                                                <p class="mb-0 pb-0 order__header-number--num">Order#124638</p>
+                                                <p class="replace-date mb-0">
+                                                    Replaced on 2021:10:11&nbsp;&nbsp;20:21
+                                                </p>
+                                            </div>
+                                            <div class="order__header-price">
+                                                <p class="mb-0">₦40.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 col-12 py-1">
+                                        <div class="order__text">
+                                            <p class="mb-1">Here will be the Name of the Product that customer buy.Like
+                                                Kurta for men with white pent</p>
+                                            <div class="order__text-sku">
+                                                <p class="mb-0">SKU : E56G9</p>
+                                            </div>
+                                            <div class="order__text-product">
+                                                <p class="mb-0">Good</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-12 py-1 order__status-section">
+                                        <div class="order__text-date ">
+                                            <p class="mb-0">Due on 13-10-2021</p>
+                                        </div>
+                                        <div class="order__button">
+                                            <button> <a href="#">Invoice<i
+                                                        class="far fa-arrow-to-bottom ms-2"></i></a></button>
+                                        </div>
+                                    </div>
+                                </li>
+
+
+
+
+
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+      <!-- =========================================================================================== -->
+    <!--========================= Mobile Footer===================== -->
+    <!-- =========================================================================================== -->
+    <section>
+        <div class="mobile-bottom " id="mobile-footer">
+            <div class="items-lists">
+                <a href="index.html" class="list-item ">
+                    <div class="item-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                    </div>
+                    <div class="item-label">
+                        Home
+                    </div>
+                </a>
+
+                <div class="list-item" id="openHeader" onclick="openHeader()">
+                    <div class="item-icon">                       
+                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                    </div>
+                    <div class="item-label">
+                        Search
+                    </div>
+                </div>
+
+
+                <div class="list-item ">
+                    <div class="item-icon2  ">
+                        <a href="market.html"><img src="assets/img/sm2.svg" alt="" class=""></a>
+                    </div>
+                </div>
+
+                <a href="seller-creation.html" class="list-item ">
+                    <div class="item-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <div class="item-label">
+                        Sell
+                    </div>
+                </a>
+
+                <a href="account-wants.html" class="list-item ">
+                    <div class="item-icon">  
+                            <i class="fas fa-heart heart"></i>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                    </div>                     
+                 
+                    <div class="item-label">
+                        Account
+                    </div>
+                </a>
+            </div>
+    </section>
+
+    
+
+    <!-- =========================================================================================== -->
+    <!--========================= BackDrawer section===================== -->
+    <!-- =========================================================================================== -->
+    <div class="backdrop" id="backdrop" href="javascript:void(0)" onclick="closeHeadNav()">
+
+    </div>
+
+    <!-- =========================================================================================== -->
+    <!--========================= Desktop Footer===================== -->
+    <!-- =========================================================================================== -->
+    <!-- Footer -->
+    <footer class="text-white desktop-footer-sm mt-3">
+        <!-- Copyright -->
+        <div class="text-center p-3 copy-right-text">
+            Copyright © zogsales 2021.All rights reserved
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+    <script src="assets/App.js"></script>
+    <!-- <script>
+        $("#selector").trigger("to.owl.carousel", [6, 1]);
+    </script> -->
+</body>
+
+</html>

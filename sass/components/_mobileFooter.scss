@@ -1,0 +1,47 @@
+
+/* ================================mobile-footer Start============================ */
+
+.items-lists {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 8px 0px;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+.market-icon {
+    margin-top: -3rem;
+    background-color: white;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.market-icon img {
+    height: 40rem;
+    widows: 4rem;
+}
+
+.market-label {
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: white;
+}
+
+.mobile-bottom {
+    display: none;
+}
+
+// ========================================== MobileFooter End====================================
